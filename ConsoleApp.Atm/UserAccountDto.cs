@@ -1,4 +1,6 @@
-﻿public class UserAccountDto
+﻿namespace ConsoleApp.MiniAtm;
+
+public class UserAccountDto
 {
     public string Name { get; private set; }
     public int Pin { get; private set; }
@@ -32,6 +34,6 @@
     public bool DepositCash(decimal amount)
     {
         Balance += amount;
-        return true; 
+        return true;
     }
 }

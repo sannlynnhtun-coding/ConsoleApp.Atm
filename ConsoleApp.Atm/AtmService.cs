@@ -1,10 +1,4 @@
-﻿
-
-
-
-
-
-
+﻿namespace ConsoleApp.MiniAtm;
 
 public class AtmService
 {
@@ -58,7 +52,6 @@ public class AtmService
         accounts.Add(cardNumber, new UserAccountDto(name, cardNumber, pin, balance));
         Console.WriteLine("Initial account created successfully!");
     }
-
 
     public void Login()
     {

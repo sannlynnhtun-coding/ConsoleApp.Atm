@@ -1,4 +1,6 @@
-﻿WelcomeUser();
+﻿using ConsoleApp.MiniAtm;
+
+WelcomeUser();
 
 Dictionary<string, UserAccountDto> accounts = GetAccounts(); // Get accounts (replace with actual data loading)
 if (accounts.Count == 0)
@@ -22,8 +24,8 @@ static Dictionary<string, UserAccountDto> GetAccounts()
 
 static void SeedAccounts(Dictionary<string, UserAccountDto> accounts)
 {
-    accounts.Add("00000000101", new UserAccountDto("John Doe", "00000000101", 1234, 1000.00m));
-    accounts.Add("00000000102", new UserAccountDto("Jane Smith", "00000000102", 5678, 500.00m));
+    accounts.Add("00000000101", new UserAccountDto("Sann Lynn Htun", "00000000101", 1234, 1000.00m));
+    accounts.Add("00000000102", new UserAccountDto("Ko Lin", "00000000102", 5678, 500.00m));
     // Add more accounts as needed
 }
 
